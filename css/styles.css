@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 3vw;
+    background-color: red;
+    list-style: none;
+    margin-left: 0;
+}
+
+nav ul li {
+    background-color: white;
+    font-size: large;
+    margin-right: 3vw;
+}
+
+.web-container {
+    height: auto;
+    width: 80%;
+    background-color: pink;
+    margin: 0 auto;
+}

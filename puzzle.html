@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/puzzle.css">
+
+    <script>
+        // Function to request fullscreen
+        function requestFullscreen(element) {
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) { // Firefox
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) { // Internet Explorer and Edge
+                element.msRequestFullscreen();
+            }
+        }
+    
+        // Automatically enter fullscreen when the page loads
+        window.onload = function() {
+            const fullscreenBtn = document.getElementById("fullscreen");
+            var bodyElement = document.getElementById("puzzle");
+            fullscreenBtn.onclick = function(){
+              requestFullscreen(bodyElement)
+            }
+        };
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Bridyam</a></li>
+            <li><a href="/bloodlines.html">Bloodlines</a></li>
+            <li><a href="/majesties.html">Majesties</a></li>
+            <li><a href="/alphabet.html">Alphabet</a></li>
+            <li><a href="/questionnaire.html">Questionnaire</a></li>
+            <li><a href="/lol.html">League of Legends</a></li>
+            <li><a href="/mymajesties.html">My Majesties</a></li>
+        </ul>
+    </nav>
+    <div class="album" id="puzzle">
+        <button id="fullscreen"></button>
+        <div class="majesty">Puzzle</div>
+    </div>
+</body>
+
+</html>
