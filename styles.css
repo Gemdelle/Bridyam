@@ -1,0 +1,18 @@
+nav {
+    height: 5vw;
+    width: 100vw;
+    background-color: rebeccapurple;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    width: 30%;
+}
+
+.web-container {
+    height: 30vw;
+    width: 80%;
+    background-color: pink;
+    margin: 0 auto;
+}
